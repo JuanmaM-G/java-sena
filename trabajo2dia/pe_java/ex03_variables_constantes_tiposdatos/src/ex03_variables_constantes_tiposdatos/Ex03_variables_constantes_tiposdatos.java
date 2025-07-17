@@ -6,7 +6,7 @@ public class Ex03_variables_constantes_tiposdatos {
     public static void main(String[] args) {
         
         
-        String nombre;
+        String nombre, vei;
         char Sexo;
         int edad;
         double salario;
@@ -26,17 +26,19 @@ public class Ex03_variables_constantes_tiposdatos {
         System.out.println("ingrese su salario (concentavos)");
         salario = in.nextDouble ();
         
-        System.out.println("¿Tiene transporte?");
-        transporte = in.nextBoolean();        
+        System.out.println("¿tiene un vehiculo true(si) false(no)?");
+        transporte = in.nextBoolean ();
+        
+        vei = transporte ? "si tiene transporte": "no tiene transporte";
         
         
 
         
         
-        System.out.println("su nombre es" + nombre);
-        System.out.println("Su sexo es" + Sexo);
-        System.out.println("su edad es" + edad);
-        System.out.println("su salario es de" + salario);
+        System.out.println("su nombre es " + nombre);
+        System.out.println("Su sexo es " + Sexo);
+        System.out.println("su edad es " + edad);
+        System.out.println("su salario es de " + salario);
         System.out.print("¿Tiene transporte?" + transporte);
     }
     
